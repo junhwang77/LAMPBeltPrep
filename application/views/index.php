@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
               <!-- <li class="active"><a href="#">Home</a></li> -->
-              <li><h3>LAMP Belt Exam (Wish List)</h3></li>
+              <li><h3>LAMP Belt Exam (Quotable Quotes)</h3></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -55,8 +55,8 @@
 
           <?php echo form_open('/main/login'); ?>
 
-            <h5>Username:</h5>
-            <input type="text" name="username" value="" size="25">
+            <h5>Email:</h5>
+            <input type="text" name="email" value="" size="25">
 
             <h5>Password</h5>
             <input type="password" name="login_pass" value="" size="25">
@@ -76,8 +76,11 @@
             <h5>Name:</h5>
             <input type="text" name="name" value="" size="25" />
 
-            <h5>Username:</h5>
-            <input type="text" name="username" value="" size="25" />
+            <h5>Alias:</h5>
+            <input type="text" name="alias" value="" size="25" />
+
+            <h5>Email:</h5>
+            <input type="text" name="email" value="" size="25" />
 
             <h5>Password:</h5>
             <input type="password" name="password" value="" size="25" />
@@ -85,8 +88,8 @@
             <h5>Confirm Password:</h5>
             <input type="password" name="passconf" value="" size="25" />
 
-            <h5>Date Hired:</h5>
-            <input type="date" name="datehired" value="">
+            <h5>Date Of Birth:</h5>
+            <input type="date" name="date_birth" value="">
 
             <div><input class="btn-primary" type="submit" name="register" value="Register" /></div>
 

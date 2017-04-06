@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-
+        <style media="screen">
+            .box {
+                border: black solid 2px;
+            }
+        </style>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -18,15 +22,23 @@
     <![endif]-->
   </head>
   <body>
-      <h3><?= $item[0]['item'] ?></h3>
-      <a href="/dashboard">Home</a>
-      <a href="/">Logout</a>
-      <p>Users who added this product/item under their wish list:</p>
-      <?php if ($item) {
-          foreach ($item as $user) {
-              echo "{$user['username']}<br/>";
-          }
-      } ?>
+      <p><a href="/quotes">Dashboard</a> | <a href="/">Logout</a></p>
+
+      <h3>Posts by <?= $quotes[0]['alias'] ?></h3>
+      <p>Count: <?php echo count($quotes); ?></p>
+
+      <div class="container">
+          <?php if (isset($quotes)) {
+              foreach ($quotes as $quote) {
+                  echo "<div class='box'>
+                      <h5>{$quote['author']}:</h5>
+                      <p>{$quote['text']}</p><br>
+                  </div>";
+              }
+          } ?>
+
+
+      </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

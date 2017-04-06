@@ -1,8 +1,8 @@
 <?php
 class User extends CI_Model {
-    function get_user_by_username($username)
+    function get_user_by_email($email)
     {
-        return $this->db->query("SELECT * FROM users WHERE username = ?", array($username))->row_array();
+        return $this->db->query("SELECT * FROM users WHERE email = ?", array($email))->row_array();
     }
     function get_user_by_id($id)
     {
@@ -10,8 +10,8 @@ class User extends CI_Model {
     }
     function add_user($user)
     {
-        $query = "INSERT INTO users (name, username, password, salt, datehired, created_at, updated_at) VALUES(?,?,?,?,?,?,?)";
-        $values = array($user['name'], $user['username'], $user['password'], $user['salt'], $user['datehired'], date("Y-m-d, H:i:s"), date("Y-m-d, H:i:s"));
+        $query = "INSERT INTO users (name, alias, email, password, salt, date_birth, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?)";
+        $values = array($user['name'], $user['alias'], $user['email'], $user['password'], $user['salt'], $user['date_birth'], date("Y-m-d, H:i:s"), date("Y-m-d, H:i:s"));
         return $this->db->query($query, $values);
     }
     function get_users_by_id($id)
