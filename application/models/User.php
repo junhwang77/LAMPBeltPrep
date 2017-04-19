@@ -1,5 +1,9 @@
 <?php
 class User extends CI_Model {
+    function get_all_users()
+    {
+        return $this->db->query("SELECT * FROM users")->result_array();
+    }
     function get_user_by_email($email)
     {
         return $this->db->query("SELECT * FROM users WHERE email = ?", array($email))->row_array();
@@ -10,18 +14,34 @@ class User extends CI_Model {
     }
     function add_user($user)
     {
-        $query = "INSERT INTO users (name, alias, email, password, salt, date_birth, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?)";
-        $values = array($user['name'], $user['alias'], $user['email'], $user['password'], $user['salt'], $user['date_birth'], date("Y-m-d, H:i:s"), date("Y-m-d, H:i:s"));
+        $query = "INSERT INTO users (first_name, last_name, email, password, salt, user_level, created_at, updated_at) VALUES(?,?,?,?,?,?,?,?)";
+        $values = array($user['first_name'], $user['last_name'], $user['email'], $user['password'], $user['salt'], $user['user_level'], date("Y-m-d, H:i:s"), date("Y-m-d, H:i:s"));
         return $this->db->query($query, $values);
     }
-    function get_users_by_id($id)
+    function edit_user_info($user)
     {
-        $this->db->select('*');
-        $this->db->from('users');
-        $this->db->join('users_has_items', 'users_has_items.users_id=users.id');
-        $this->db->join('items', 'users_has_items.items_id = items.id');
-        $this->db->where('items_id', $id);
-        return $this->db->get()->row_array();
+        $query = "UPDATE users SET first_name = ?, last_name = ?, email = ?, user_level = ?, updated_at = ? WHERE id = ?";
+        $set = array($user['first_name'], $user['last_name'], $user['email'], $user['user_level'], date("Y-m-d, H:i:s"), $user['id']);
+        return $this->db->query($query, $set);
+    }
+    function edit_user_desc($user)
+    {
+        $query = "UPDATE users SET description = ?, updated_at = ? WHERE id = ?";
+        $set = array($user['description'], date("Y-m-d, H:i:s"), $user['user_id']);
+        return $this->db->query($query, $set);
+    }
+    function edit_password($user)
+    {
+        $date = date("Y-m-d, H:i:s");
+        $query = "UPDATE users SET password = ?, salt = ?, updated_at = ? WHERE id = ?";
+        $set = array($user['password'], $user['salt'], date("Y-m-d, H:i:s"), $user['id']);
+        return $this->db->query($query, $set);
+    }
+    function remove_user($id)
+    {
+        $query = "DELETE FROM users WHERE id = ?";
+        $where = array($id);
+        return $this->db->query($query, $where);
     }
 }
 
