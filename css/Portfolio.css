@@ -4,27 +4,27 @@
 }
 
 body {
-    background: url("Portfolio/background.jpg") no-repeat center center fixed;
+    background: url("Portfolio/from_bridge.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-weight: lighter;
 }
 
 .wrapper {
     background-color: rgba(0,0,0, 0.60);
     text-align: center;
-    margin: 180px 0px 0px 0px;
+    margin: 200px 0px 100px 0px;
     padding-bottom: 11px;
     width: auto;
 }
 
 #face {
-    width: 200px;
-    border-radius: 11px;
+    width: 100px;
+    /*border-radius: 11px;*/
     margin: 33px 0px;
     vertical-align: top;
-    border: white dashed 2px;
 }
 
 #name {

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome Page</title>
+    <title>Home Page</title>
     <link rel = "stylesheet" type = "text/css"
    href = "<?php echo base_url(); ?>css/Portfolio.css">
     <style media="screen">
@@ -15,7 +15,7 @@
             color: white;
             padding: 77px;
             border-radius: 10px;
-            border: white 3px dashed;
+            border: white 2px dashed;
         }
         .mini {
             background-color: white;
@@ -23,8 +23,10 @@
             border-radius: 10px;
             background-color: rgba(0,0,0, 0.60);
             color: white;
-            border: white 3px dashed;
-
+            border: white 2px dashed;
+        }
+        .bu {
+            width: 30px;
         }
     </style>
     <!-- Bootstrap -->
@@ -68,16 +70,16 @@
       </nav>
       <div class="wrapper">
            <h1 id="name">Jun Hwang</h1>
-           <img id="face" src="css/Portfolio/Newphoto1.jpg" alt="profile picture" />
+           <!-- <img id="face" src="css/Portfolio/profile2.jpg" alt="profile picture" /> -->
            <h4 id="description">Hello, my name is Jun, and I received a B.S. in Animal Sciences from UC Davis. I have found my new passion in programming through my friend who introduced me to CS50x Harvard class that opened my eyes to the world of programming, and its vast creative potential.</h4>
            <div class="links">
                <div class="container">
                    <div class="row">
-                       <a class="btn btn-primary view-pdf" href="css/Portfolio/JunResume2017.pdf"><img src="css/Portfolio/glyphicons-248-note.png" alt="resume" /></a>
+                       <a style="margin:1px; padding:1px;" class="btn btn-danger view-pdf" href="css/Portfolio/JunHwangResume2017.pdf"><img style="width:30px;" src="css/Portfolio/glyphicons-248-note.png" alt="resume" /></a>
                        <a id="abc" href="https://www.linkedin.com/in/jun-hwang-b8316326
                        "><img src="css/Portfolio/In-2C-59px-R.png" alt="linkedIn
                        " /></a>
-                       <a href="https://github.com/junhwang77"><img src="css/Portfolio/GitHub-Mark-Light-64px.png" alt="GitHub" /></a>
+                       <a href="https://github.com/junhwang77/Jun-s-Repository"><img src="css/Portfolio/GitHub-Mark-Light-64px.png" alt="GitHub" /></a>
                    </div>
                </div>
            </div>
