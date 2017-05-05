@@ -71,7 +71,7 @@
       <div class="wrapper">
            <h1 id="name">Jun Hwang</h1>
            <!-- <img id="face" src="css/Portfolio/profile2.jpg" alt="profile picture" /> -->
-           <h4 id="description">ull stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field, with over 4 years of experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
+           <h4 class="text-center" id="description">Full stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field, with over 4 years of experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
            <div class="links">
                <div class="container">
                    <div class="row">
