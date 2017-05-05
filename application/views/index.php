@@ -71,7 +71,7 @@
       <div class="wrapper">
            <h1 id="name">Jun Hwang</h1>
            <!-- <img id="face" src="css/Portfolio/profile2.jpg" alt="profile picture" /> -->
-           <h4 class="text-center" id="description">Full stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field, with over 4 years of experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
+           <h4 id="description">Full stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field, with over 4 years of experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
            <div class="links">
                <div class="container">
                    <div class="row">
@@ -87,7 +87,7 @@
       <div class="container">
           <div class="jumbo">
               <h1>User Dashboard Project</h1>
-              <p>Please email <a href="junhwang77@hotmail.com">junhwang77@hotmail.com</a> if you want your account deleted.</p>
+              <p>Please email <a href="/junhwang77@hotmail.com">junhwang77@hotmail.com</a> if you want your account deleted.</p>
               <p><a class="btn btn-primary btn-lg" href="signin" role="button">Start</a></p>
           </div>
           <div class="container-fluid">
