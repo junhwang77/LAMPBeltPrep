@@ -71,11 +71,11 @@
       <div class="wrapper">
            <h1 id="name">Jun Hwang</h1>
            <!-- <img id="face" src="css/Portfolio/profile2.jpg" alt="profile picture" /> -->
-           <h4 id="description">Full stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field, with over 4 years of experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
+           <h4 id="description">Full stack developer, experienced in LAMP stack, Python, and front-end web development. Formerly worked in the animal science field for over 4 years, with experience in team environment, finding creative solutions and improving quality of services. Seeking a new career in technology, where I can continue my passion for learning and cool technology.</h4>
            <div class="links">
                <div class="container">
                    <div class="row">
-                       <a style="margin:1px; padding:1px;" class="btn btn-danger view-pdf" href="css/Portfolio/JunHwangResume2017.pdf"><img style="width:30px;" src="css/Portfolio/glyphicons-248-note.png" alt="resume" /></a>
+                       <a style="margin:1px; padding:1px;" class="btn btn-danger view-pdf" href="css/Portfolio/JunHwangResume2017csis.pdf"><img style="width:30px;" src="css/Portfolio/glyphicons-248-note.png" alt="resume" /></a>
                        <a id="abc" href="https://www.linkedin.com/in/jun-hwang-b8316326
                        "><img src="css/Portfolio/In-2C-59px-R.png" alt="linkedIn
                        " /></a>
